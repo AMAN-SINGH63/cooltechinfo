@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoolTech Experts 2024 - Professional AC, Cooler & Fan Repair Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        emailjs.init('Ab7NOtQFQusHEvHOZ'); // Replace with your EmailJS public key
+    </script>
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #00a8ff;
+            --accent: orange;
+            --dark: #1e3a8a;
+            --light: #f8fafc;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--dark) 0%, var(--primary) 50%, var(--secondary) 100%);
+        }
+        
+        .service-card {
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--primary);
+            box-shadow: 0 25px 30px -10px rgba(0, 0, 0, 0.15);
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 102, 204, 0.4);
+
+
+        }
+        
+        .feature-badge {
+            background: linear-gradient(135deg, var(--accent), #ff8e8e);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-xl fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-fan text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <span class="text-2xl font-bold text-gray-800">CoolTech</span>
+                            <span class="block text-xs text-blue-600 font-semibold">EXPERTS 2024</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Home</a>
+
+
+
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Services</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium transition-colors">About</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 px-3 py-2 font-medium transition-colors">Reviews</a>
+                    <a href="#contact" class="btn-primary text-white px-6 py-3 rounded-full font-semibold">
+                        <i class="fas fa-phone-alt mr-2"></i>Call Now
+                    </a>
+                </div>
+                
+                <div class="lg:hidden flex items-center">
+                    <button class="mobile-menu-button p-2">
+                        <i class="fas fa-bars text-gray-700 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden lg:hidden bg-white border-t">
+            <div class="px-4 py-6 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-blue-600 py-2 font-medium">Home</a>
+                <a href="#services" class="block text-gray-700 hover:text-blue-600 py-2 font-medium">Services</a>
+                <a href="#about" class="block text-gray-700 hover:text-blue-600 py-2 font-medium">About</a>
+                <a href="#testimonials" class="block text-gray-700 hover:text-blue-600 py-2 font-medium">Reviews</a>
+
+                <a href="#contact" class="block btn-primary text-white text-center py-3 rounded-full font-semibold mt-4">
+                    <i class="fas fa-phone-alt mr-2"></i>Call Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white pt-28 pb-20 md:pt-36 md:pb-28 relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="feature-badge rounded-full px-4 py-2 text-sm font-semibold text-white mb-6 inline-block">
+                        <i class="fas fa-bolt mr-2"></i>24/7 Emergency Service Available
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Expert <span class="gradient-text">Cooling System</span> Repairs
+                    </h1>
+                    
+                    <p class="text-xl mb-8 text-blue-100 leading-relaxed">
+                        Professional AC, Cooler & Fan Repair Services with 15+ years of experience. Fast, reliable, and affordable solutions for your comfort needs.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <a href="tel:6389706492" class="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            Call: 6389706492
+                        </a>
+                        <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+                            <i class="fas fa-calendar-check mr-3"></i>Book Service
+                        </a>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-6 text-blue-200 text-sm">
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-lg mr-2"></i>
+                            <span>24/7 Emergency Service</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-shield-alt text-lg mr-2"></i>
+                            <span>1 Year Warranty</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-tools text-lg mr-2"></i>
+                            <span>Expert Technicians</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="relative floating">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1ea4495a-18a8-4878-939a-2b02b18d9807.png" alt="Professional HVAC technician in uniform repairing modern air conditioning unit with tools and equipment" class="rounded-2xl shadow-2xl">
+                        <div class="absolute -top-4 -right-4 bg-white rounded-xl p-4 shadow-lg">
+                            <div class="text-center">
+                                <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-2">
+                                    <i class="fas fa-check text-white text-xl"></i>
+                                </div>
+                                <span class="text-sm font-semibold text-gray-800">Certified Experts</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">24/7</div>
+                    <div class="text-gray-600">Service Available</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">15min</div>
+                    <div class="text-gray-600">Quick Response</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl md:text-5xl font-bold text-blue-600 mb-2">100%</div>
+                    <div class="text-gray-600">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+   <section id="services" class="py-16 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Premium Services</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Comprehensive cooling system solutions for all your comfort needs
+      </p>
+    </div>
+
+    <!-- Grid updated to 1 / 2 / 4 responsive layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <!-- AC Repair Service -->
+    <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+  <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+    <i class="fas fa-snowflake text-blue-600 text-3xl"></i>
+  </div>
+  <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">AC Repair</h3>
+  <p class="text-gray-600 mb-6 text-center">Professional diagnosis and repair for all air conditioner models and brands</p>
+  
+  <ul class="space-y-3 mb-6">
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Compressor repair</span></li>
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Refrigerant charging</span></li>
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Thermostat calibration</span></li>
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Duct cleaning</span></li>
+    <!-- New features -->
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Filter cleaning & replacement</span></li>
+    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Electrical wiring & circuit repair</span></li>
+  </ul>
+  
+  <a href="#contact" class="block w-full btn-primary text-white py-3 rounded-xl text-center font-semibold">Book Service</a>
+</div>
+
+
+      <!-- Washing Machine Repair -->
+      <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+        <div class="w-20 h-20 bg-green-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+          <i class="fas fa-tint text-green-600 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Washing Machine Repair</h3>
+        <p class="text-gray-600 mb-6 text-center">Expert repair and maintenance services for top-load, front-load, and semi-automatic washing machines</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Motor repair & replacement</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Water inlet & drainage issues</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Spin & dryer problems</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Door lock & gasket replacement</span></li>
+        </ul>
+        <a href="#contact" class="block w-full btn-primary text-white py-3 rounded-xl text-center font-semibold">Book Service</a>
+      </div>
+
+      <!-- Refrigerator Repair -->
+      <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+        <div class="w-20 h-20 bg-orange-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+          <i class="fas fa-icicles text-orange-600 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Refrigerator Repair</h3>
+        <p class="text-gray-600 mb-6 text-center">Expert refrigerator repair and maintenance for all types of single & double door fridges</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Compressor repair & replacement</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Gas refilling & leakage fixing</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Thermostat & cooling issues</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Door seal & gasket replacement</span></li>
+        </ul>
+        <a href="#contact" class="block w-full btn-primary text-white py-3 rounded-xl text-center font-semibold">Book Service</a>
+      </div>
+
+      <!-- Dishwasher Repair -->
+      <div class="service-card bg-white rounded-2xl p-8 shadow-lg">
+        <div class="w-20 h-20 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 mx-auto">
+          <i class="fas fa-utensils text-blue-600 text-3xl"></i>
+        </div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4 text-center">Dishwasher Repair</h3>
+        <p class="text-gray-600 mb-6 text-center">Professional dishwasher repair and maintenance for all leading brands & models</p>
+        <ul class="space-y-3 mb-6">
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Water inlet & drainage issues</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Spray arm & filter cleaning</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Heating element replacement</span></li>
+          <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-3"></i><span class="text-gray-700">Control panel & sensor repair</span></li>
+        </ul>
+        <a href="#contact" class="block w-full btn-primary text-white py-3 rounded-xl text-center font-semibold">Book Service</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c346d0c9-08c0-4d90-80c3-1bf3508e434b.png" alt="Team of professional HVAC technicians in uniform with repair tools and equipment" class="rounded-2xl shadow-xl">
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl p-6 shadow-lg">
+                        <div class="text-center">
+                            <div class="text-3xl font-bold text-blue-600">15+</div>
+                            <div class="text-gray-600 font-semibold">Years Experience</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Why Choose CoolTech Experts?</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        With over 15 years of experience in the cooling system industry, we provide expert repair and maintenance services that you can trust. Our certified technicians are equipped with the latest tools and training to handle any AC, Washing Machine,Refrigerator,Dishwasher.
+                    </p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-award text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Certified Experts</h4>
+                                <p class="text-gray-600">All technicians are certified and undergo regular training</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-clock text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Quick Response</h4>
+                                <p class="text-gray-600">Same-day service available for emergency repairs</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                                <i class="fas fa-shield-alt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Warranty Protected</h4>
+                                <p class="text-gray-600">All repairs come with comprehensive warranty coverage</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn-primary text-white px-8 py-3 rounded-full font-semibold inline-flex items-center">
+                        <i class="fas fa-calendar mr-2"></i>Schedule Service
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Customers Say</h2>
+                <p class="text-xl text-gray-600">Trusted by thousands of satisfied customers</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Rajesh Kumar</h4>
+                            <p class="text-blue-600 text-sm">Homeowner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"The team arrived within 30 minutes and fixed my AC unit perfectly. Professional service and reasonable pricing. Highly recommended!"</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Priya Sharma</h4>
+                            <p class="text-blue-600 text-sm">Office Manager</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Emergency service saved our office during a heatwave. Quick response and excellent workmanship. Will definitely use again."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-user text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold">Amit Patel</h4>
+                            <p class="text-blue-600 text-sm">Restaurant Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-4">"Regular maintenance plan keeps all our cooling systems running smoothly. Professional and reliable service every time."</p>
+                    <div class="flex">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <!-- Contact Form Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Form -->
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl shadow-2xl p-8 md:p-12">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Get Your Free Quote Today</h2>
+                        <p class="text-xl text-gray-600">Fill out the form below and we'll get back to you within 24 hours</p>
+                    </div>
+                    
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                                <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                            </div>
+                            <div>
+                                <label for="service" class="block text-sm font-medium text-gray-700 mb-2">Service Needed *</label>
+                                <select id="service" name="service" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
+                                    <option value="">Select a service</option>
+                                     <option value="All Types of Electrical Instrument Repair">All Types of Electrical Instrument Repair</option>
+                                    <option value="AC Repair">AC Repair</option>
+                                    <option value="Washing Machine Repair">Washing Machine Repair</option>
+                                    <option value="Refrigerator Repair">Refrigerator Repair</option>
+                                    <option value="Dishwasher Repair">Dishwasher Repair</option>
+                                    <option value="Emergency Service">Emergency Service</option>
+
+
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all" placeholder="Please describe your issue or request..."></textarea>
+                        </div>
+                        
+
+                        <!--
+                        <div class="flex items-center">
+                            <input type="checkbox" id="consent" name="consent" required class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
+                            <label for="consent" class="ml-2 block text-sm text-gray-700">I consent to having this website store my submitted information</label>
+                    </div>  
+                              -->
+                        <button type="submit" class="w-full btn-primary text-white py-4 px-6 rounded-lg font-semibold text-lg transition-all">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Request
+                        </button>
+                    </form>
+                </div>
+
+          
+
+                <!-- Contact Info -->
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Contact Information</h2>
+                    <ul class="space-y-6 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">📞</span>
+                            <div>
+                                <p class="font-semibold">Main Line</p>
+                                <a href="tel:+919876543210" class="text-blue-600 hover:underline">+91 9876543210</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">🚨</span>
+                            <div>
+                                <p class="font-semibold">24/7 Emergency</p>
+                                <a href="tel:+918765432109" class="text-blue-600 hover:underline">+91 8765432109</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">✉️</span>
+                            <div>
+                                <p class="font-semibold">Email</p>
+                                <a href="mailto:service@cooltechrepairs.com" class="text-blue-600 hover:underline">service@cooltechrepairs.com</a>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">📍</span>
+                            <div>
+                                <p class="font-semibold">Service Area</p>
+                                <p>Dadari</p>
+                                <p>Gaur City Noida</p>
+                                <p>Tilapta Greater Noida</p>
+                                <p>Delta Greater Noida</p>
+                                <p>Gama Greater Noida</p>
+                                <p>Bisrakh Greater Noida</p>
+
+                                <p>Chauhanpur Greater Noida</p>
+                                 
+
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl mr-3">🕒</span>
+                            <div>
+                                <p class="font-semibold">Service Hours</p>
+                                <p>Mon-Sun: 8:00 AM - 10:00 PM<br>Emergency: 24/7</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-3">
+                            <i class="fas fa-fan text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">CoolTech Experts</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted partner for all cooling system repairs and maintenance needs since 2020.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">AC Repair</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Cooler Maintenance</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Fan Repair</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Emergency Services</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Maintenance Plans</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Contact Info</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">123 Cooling Street, Tech City</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-blue-400 mr-3"></i>
+                            <a href="tel:9897994670" class="text-gray-400 hover:text-white">9897994670</a>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-envelope text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">info@cooltechexperts.com</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-clock text-blue-400 mr-3"></i>
+                            <span class="text-gray-400">24/7 Emergency Service</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">© 2024 CoolTech Experts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.querySelector('.mobile-menu-button');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Form submission with EmailJS
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show loading state
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitBtn.disabled = true;
+                
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    service: document.getElementById('service').value,
+                    message: document.getElementById('message').value,
+                    timestamp: new Date().toLocaleString()
+                };
+                
+                // Send email using EmailJS
+                emailjs.send('service_mggfgwu', 'template_txp27i2', formData)
+                    .then(function(response) {
+                        alert('Thank you! Your message has been sent successfully. We will contact you within 2 minutes.');
+                        contactForm.reset();
+                    })
+                    .catch(function(error) {
+                        alert('Sorry, there was an error sending your message. Please try again or call us directly at 9897994670.');
+                        console.error('EmailJS Error:', error);
+                    })
+                    .finally(function() {
+                        // Restore button state
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                    });
+            });
+
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
